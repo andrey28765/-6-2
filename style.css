@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2bbde2c5;
+}
+.header{
+    width: 10px;
+    height: 1cap;
+    background-color: blueviolet;
+}
+body {
+    font-family: Arial,Helvetica;
+    padding-top: 60px; /* Отступ под фиксированное меню */
+    padding-bottom: 60px; /* Отступ под футер */
+    position: relative;
+}
+
+/* 1. Меню */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    padding: 5px;
+    z-index: 1000;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 30px;
+}
+
+.menu ul li a {
+    color: rgba(255, 255, 255, 0.548);
+    text-decoration: none;
+}
+
+/* Блоки контента */
+.content {
+    padding: 40px;
+    min-height: 300px;
+}
+
+.info{ background-color: white); }
+.photo { background-color: #e4e4e4b4; }
+.content-3 { background-color: #d4d4d4; }
+
+/* 5. Футер */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Круглая кнопка в правом нижнем углу */
+.floating-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Значок онлайн */
+.user-online {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    position: relative;
+}
+
+.user-online img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.online-dot {
+    position: absolute;
+    top: 10;
+    right: 10;
+    width: 15px;
+    height: 15px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    border: 2px solid white;
+}
